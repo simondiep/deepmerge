@@ -27,7 +27,11 @@ function mergeObject(target, source, optionsArgument) {
 	}
 	Object.keys(source).forEach(function(key) {
 		if (!isMergeableObject(source[key]) || !target[key]) {
-			destination[key] = cloneUnlessOtherwiseSpecified(source[key], optionsArgument)
+			if (typeof source[key] === 'number' && typeof target[key] === 'number') {
+				destination[key] = source[key] + target[key]
+			} else {
+				destination[key] = cloneUnlessOtherwiseSpecified(source[key], optionsArgument)
+			}
 		} else {
 			destination[key] = deepmerge(target[key], source[key], optionsArgument)
 		}

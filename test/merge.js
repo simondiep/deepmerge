@@ -472,3 +472,23 @@ test('dates should copy correctly in an array', function(t) {
 	t.deepEqual(actual, expected)
 	t.end()
 })
+
+test('should sum two numbers', function(t) {
+	var firstNumber = 123
+	var secondNumber = 456
+
+	var target = {
+		key: firstNumber,
+	}
+	var source = {
+		key: secondNumber,
+	}
+
+	var expected = {
+		key: firstNumber + secondNumber,
+	}
+	var actual = merge(target, source)
+
+	t.deepEqual(actual, expected)
+	t.end()
+})
