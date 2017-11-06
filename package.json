@@ -1,5 +1,5 @@
 {
-  "author": "Nick Fisher",
+  "author": "Simon Diep",
   "name": "deepmergewithnumbers",
   "description": "A library for deep (recursive) merging of Javascript objects",
   "keywords": [
@@ -10,11 +10,11 @@
     "clone",
     "recursive"
   ],
-  "version": "2.0.3",
-  "homepage": "https://github.com/KyleAMathews/deepmerge",
+  "version": "2.0.4",
+  "homepage": "https://github.com/simondiep/deepmergewithnumbers",
   "repository": {
     "type": "git",
-    "url": "git://github.com/KyleAMathews/deepmerge.git"
+    "url": "git://github.com/simondiep/deepmergewithnumbers.git"
   },
   "main": "dist/umd.js",
   "module": "dist/es.js",
@@ -22,8 +22,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "prebuild": "cp package.json dist/",
     "build": "rollup -c",
-    "postbuild": "cp index.d.ts dist/ && cp package.json dist/",
     "test": "npm run build && tap test/*.js && jsmd readme.md"
   },
   "devDependencies": {
