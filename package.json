@@ -1,6 +1,6 @@
 {
   "author": "Nick Fisher",
-  "name": "deepmerge",
+  "name": "deepmergewithnumbers",
   "description": "A library for deep (recursive) merging of Javascript objects",
   "keywords": [
     "merge",
@@ -10,7 +10,7 @@
     "clone",
     "recursive"
   ],
-  "version": "2.0.1",
+  "version": "2.0.2",
   "homepage": "https://github.com/KyleAMathews/deepmerge",
   "repository": {
     "type": "git",
