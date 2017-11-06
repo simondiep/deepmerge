@@ -55,7 +55,7 @@ function deepmerge(target, source, optionsArgument) {
 	}
 }
 
-deepmerge.all = function deepmergeAll(array, optionsArgument) {
+deepmergewithnumbers.all = function deepmergeAll(array, optionsArgument) {
 	if (!Array.isArray(array)) {
 		throw new Error('first argument should be an array')
 	}
@@ -65,4 +65,4 @@ deepmerge.all = function deepmergeAll(array, optionsArgument) {
 	}, {})
 }
 
-module.exports = deepmerge
+module.exports = deepmergewithnumbers

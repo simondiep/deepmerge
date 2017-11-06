@@ -2,6 +2,6 @@ interface Deepmerge {
   all(arrayOfObjectsToBeMerged: Array<Object>): Object;
 }
 
-declare let deepmerge: Deepmerge;
+declare let deepmergewithnumbers: Deepmerge;
 
-export default deepmerge;
+export default deepmergewithnumbers;
